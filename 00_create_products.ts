@@ -16,6 +16,7 @@ import Stripe from 'stripe';
     description: 'free plan',
   })
   console.log(`free productId: ${productFree.id}`)
+  console.log(`free priceId: ${productFree.default_price}`)
 
   const productPro = await stripeClient.products.create({
     name: 'pro',
@@ -31,4 +32,5 @@ import Stripe from 'stripe';
   })
 
   console.log(`pro productId: ${productPro.id}`)
+  console.log(`free priceId: ${productPro.default_price}`)
 })();
