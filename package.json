@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create-customer": "node -r ts-node/register --env-file=.env 01_create_customer.ts"
+    "create-products": "node -r ts-node/register --env-file=.env 00_create_products.ts",
+    "create-customers": "node -r ts-node/register --env-file=.env 01_create_customers.ts"
   },
   "keywords": [],
   "author": "",
